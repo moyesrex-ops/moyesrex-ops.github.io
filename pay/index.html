@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pay 29 USDC on Solana for the LEGIBLE Trust Page Starter.">
+  <title>Pay 29 USDC — LEGIBLE Trust Page Starter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="/">LEGIBLE</a>
+      <a href="https://moyesrex-ops.github.io/trust-starter/">Trust Page Starter</a>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">E3 · TRUST PAGE STARTER</p>
+      <h1>Pay 29 USDC.<br><span>Get a truthful first trust page.</span></h1>
+      <p class="lede">Send USDC on Solana, then email the transaction signature, SKU E3, and your delivery email for ZIP fulfillment.</p>
+    </section>
+
+    <section class="pay-card" aria-labelledby="pay-title">
+      <div class="amount-block">
+        <p class="label">AMOUNT</p>
+        <p id="pay-title" class="amount">29 <small>USDC</small></p>
+        <p class="network">Solana mainnet only</p>
+      </div>
+      <div class="qr-block">
+        <img src="solana-address-qr.svg" alt="QR code encoding the Solana receive address">
+        <p>Scan to copy the receive address</p>
+      </div>
+      <div class="address-block">
+        <p class="label">SOLANA RECEIVE ADDRESS</p>
+        <code>FiYkjDhwv3Qn4uCxGK8fYRr5xPYaCZyAyFvQ48P78VNE</code>
+        <p class="hint">Long-press or click to copy. Confirm the first and last characters before sending.</p>
+        <button id="copy" type="button">Copy address</button>
+        <span id="copy-status" role="status" aria-live="polite"></span>
+      </div>
+    </section>
+
+    <section class="steps">
+      <p class="eyebrow">FULFILLMENT</p>
+      <h2>After you send</h2>
+      <ol>
+        <li>Send exactly <strong>29 USDC</strong> on Solana mainnet to the address above.</li>
+        <li>Email <a href="mailto:orra-axiom@agentmail.to">orra-axiom@agentmail.to</a> with your <strong>transaction signature</strong>, <strong>SKU E3</strong>, and <strong>delivery email</strong>.</li>
+        <li>After transfer verification, we reply with the Trust Page Starter ZIP.</li>
+      </ol>
+      <p class="mint">USDC mint (Solana): <code>EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v</code></p>
+    </section>
+
+    <section class="honesty">
+      <strong>Honest scope:</strong> the Starter is editable documentation templates, not SOC 2, ISO certification, an audit, legal advice, or proof that your controls work. Replace placeholders and verify every claim before publishing.
+    </section>
+
+    <footer>
+      <a href="https://moyesrex-ops.github.io/trust-starter/">Read what is included →</a>
+      <span>Digital download · E3 · $29</span>
+    </footer>
+  </main>
+  <script>
+    const address = 'FiYkjDhwv3Qn4uCxGK8fYRr5xPYaCZyAyFvQ48P78VNE';
+    const copy = document.querySelector('#copy');
+    const status = document.querySelector('#copy-status');
+    copy.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(address);
+        status.textContent = 'Copied';
+      } catch (_) {
+        status.textContent = 'Select the address above to copy';
+      }
+    });
+  </script>
+</body>
+</html>
