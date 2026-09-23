@@ -16,6 +16,7 @@
         <span>LEGIBLE <small>STARTER</small></span>
       </a>
       <nav aria-label="Page navigation">
+        <a href="#pay-usdc">Pay</a>
         <a href="#included">Included</a>
         <a href="#scope">Scope</a>
         <a href="#faq">FAQ</a>
@@ -24,7 +25,7 @@
 
     <div class="alert" role="note" id="top">
       <strong>Templates only — not certification or legal advice.</strong>
-      Verify every statement against your real practices before publishing. This page is prepared for a future Gumroad listing; checkout is not live here.
+      Verify every statement against your real practices before publishing. Crypto checkout (USDC on Solana) is available below. Gumroad/fiat remains coming soon—no fake storefront link.
     </div>
 
     <main>
@@ -36,13 +37,13 @@
           <div class="price-line">
             <span class="price">$29</span>
             <span class="price-note">one-time digital download</span>
-            <span class="status">COMING SOON</span>
+            <span class="status status-live">USDC LIVE</span>
           </div>
           <div class="cta-row">
-            <button class="button button-primary" type="button" disabled aria-disabled="true">Coming soon — Gumroad link here</button>
+            <a class="button button-primary" href="#pay-usdc">Pay with USDC (Solana)</a>
             <a class="button button-quiet" href="#included">See what’s inside <span aria-hidden="true">↓</span></a>
           </div>
-          <p class="microcopy">No live URL is wired on this page. Victor will publish the $29 product on Gumroad after final review.</p>
+          <p class="microcopy">Preferred checkout: 29 USDC on Solana. Gumroad/fiat CTA stays disabled until Victor publishes a real storefront—no fake URL.</p>
         </div>
         <aside class="snapshot" aria-label="Starter snapshot">
           <div class="snapshot-label">THE STARTER ZIP</div>
@@ -143,17 +144,45 @@
         </details>
         <details>
           <summary>Is the checkout live?</summary>
-          <p>Not on this static page. The button remains disabled until a real Gumroad URL is selected and the product is ready to publish.</p>
+          <p><strong>USDC on Solana is live</strong> — see <a href="#pay-usdc">Pay with USDC</a>. Gumroad/fiat remains disabled until a real storefront URL is published. There is no fake Gumroad link on this page.</p>
         </details>
+      </section>
+
+
+      <section id="pay-usdc" class="section pay-crypto" aria-labelledby="pay-title">
+        <p class="eyebrow">CHECKOUT · SOLANA</p>
+        <h2 id="pay-title">Pay with USDC (Solana)</h2>
+        <p class="section-intro">No bank account required on your side or ours for this path. Send USDC on Solana, then email the transaction details for ZIP delivery.</p>
+        <div class="pay-grid">
+          <div class="pay-card">
+            <div class="pay-label">Amount</div>
+            <div class="pay-value">29 USDC</div>
+            <p class="pay-note">Exact amount preferred. Network: <strong>Solana mainnet</strong> only.</p>
+          </div>
+          <div class="pay-card pay-card-wide">
+            <div class="pay-label">Receive address</div>
+            <code class="pay-address" id="sol-receive">FiYkjDhwv3Qn4uCxGK8fYRr5xPYaCZyAyFvQ48P78VNE</code>
+            <p class="pay-note">USDC mint: <code>EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v</code>. Do not send from Ethereum or other chains.</p>
+          </div>
+        </div>
+        <ol class="pay-steps">
+          <li>Send <strong>29 USDC</strong> on Solana to the address above.</li>
+          <li>Email <a href="mailto:orra-axiom@agentmail.to"><strong>orra-axiom@agentmail.to</strong></a> with: <em>transaction signature</em>, SKU <strong>E3</strong>, and your <em>delivery email</em>.</li>
+          <li>After we verify the transfer on Solscan, we reply with <code>LEGIBLE-Trust-Page-Starter-v0.1.zip</code>.</li>
+        </ol>
+        <p class="pay-fallback">Fallback: SOL worth about $29 at payment time — slightly overpay or ask for a quote first. Crypto payments have no chargebacks; goodwill refunds are case-by-case.</p>
       </section>
 
       <section class="closing-card" aria-label="Purchase status">
         <div>
-          <p class="eyebrow">READY WHEN THE STORE IS READY</p>
+          <p class="eyebrow">CRYPTO LIVE · FIAT COMING SOON</p>
           <h2>One ZIP. One honest scope. $29 once.</h2>
-          <p>The product file is prepared as <code>LEGIBLE-Trust-Page-Starter-v0.1.zip</code>. Checkout will be connected later—no fake payment link, no test link presented as live.</p>
+          <p>Pay with <a href="#pay-usdc">29 USDC on Solana</a>, then email <code>orra-axiom@agentmail.to</code>. Gumroad stays disabled—no fake payment link.</p>
         </div>
-        <button class="button button-primary" type="button" disabled aria-disabled="true">Gumroad link pending</button>
+        <div class="closing-actions">
+          <a class="button button-primary" href="#pay-usdc">Pay with USDC</a>
+          <button class="button button-quiet" type="button" disabled aria-disabled="true">Gumroad — coming soon</button>
+        </div>
       </section>
     </main>
 

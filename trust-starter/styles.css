@@ -112,3 +112,21 @@ footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .7
   .button { width: 100%; }
   .cta-row { align-items: stretch; flex-direction: column; }
 }
+
+.status-live { border-color: rgba(97,213,154,.5); color: #9be7c0; background: rgba(97,213,154,.12); }
+.pay-crypto { padding: 1.6rem; border: 1px solid rgba(97,213,154,.35); border-radius: calc(var(--radius) + 2px); background: linear-gradient(145deg, rgba(37,104,75,.16), rgba(18,26,37,.85)); }
+.pay-grid { display: grid; grid-template-columns: minmax(140px, .4fr) 1fr; gap: 1rem; margin: 1.2rem 0 1.4rem; }
+.pay-card { padding: 1.1rem 1.2rem; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(10,15,22,.55); }
+.pay-label { margin-bottom: .45rem; color: var(--green); font-size: .68rem; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; }
+.pay-value { font-size: 2rem; font-weight: 850; letter-spacing: -.04em; line-height: 1.1; }
+.pay-address { display: block; margin: .35rem 0 .55rem; padding: .75rem .85rem; border-radius: 10px; border: 1px solid rgba(113,187,255,.35); background: rgba(8,16,26,.85); color: #cfe6ff; font-size: clamp(.72rem, 2.2vw, .88rem); word-break: break-all; line-height: 1.45; }
+.pay-note { margin: .55rem 0 0; color: var(--muted); font-size: .86rem; }
+.pay-steps { margin: 0 0 1rem; padding-left: 1.25rem; color: var(--muted); }
+.pay-steps li { margin: .45rem 0; }
+.pay-steps a { color: var(--blue); }
+.pay-fallback { margin: 0; color: var(--dim); font-size: .82rem; }
+.closing-actions { display: flex; flex-direction: column; gap: .65rem; align-items: stretch; min-width: min(100%, 220px); }
+.pay-crypto a { color: var(--blue); }
+@media (max-width: 650px) {
+  .pay-grid { grid-template-columns: 1fr; }
+}
